@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Cauculator</title>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <h1 class="title">Tip Cauculator</h1>
+    </div>
+    <div>
+       
+        <form class="tipsForm" id="tipsForm" >
+            
+            <label for="totalBill">
+            <p>How mutch was the bill?</p>
+            </label>
+            <p>
+                $: <input type="number" name="R$" id="totalBill" placeholder="100" class="formInput"  required >
+            </p>
+            <label for="serviceQuality">
+                <p>How was your service?</p>
+        
+        <p>
+            <select name="serviceQuality" id="serviceQuality" class="formSelectt" required >
+                <option disable select value>-- Choose one option</option>
+            <option value="veryGood">30% -Absulutely Incredible!!!</option>
+            <option value="god">20% - nice!!</option>
+            <option value="medium">15% - It was allrigth</option>  
+            <option value="bad">10% - Not very good</option>
+            <option value="noTip">0 - Terrible!</option>
+        </select>
+        </p>
+    </label>
+    
+    
+        
+            <p>How many people will split the bill?</p>
+            <label for="splitBill"></label>
+            <p>
+                $: <input type="number" name="R$" id="splitBill" placeholder=1 class="formInput"  required>
+            </p>
+            <button class="formSubmit" type="submit">Calculate</button>
+            </div>
+        </form>
+        <div id="totalTip">
+            Total Tip: 
+            $<span id="tip">0.00</span>
+            <p id="each">Each</p>
+            </div>
+
+    
+</div>
+
+
+
+<script type="text/javascript" src="calculateTip.js"></script>    
+</body>
+</html>
